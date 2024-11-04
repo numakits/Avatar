@@ -1,0 +1,90 @@
+body {
+  background-image: url(/background/daihanoibg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1,
+h2 {
+  text-align: center;
+  margin: 0 0 10px 0;
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 2.5rem;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+  text-shadow: 1px 1px 4px black, -1px -1px 0px black, 1px -1px 0px black,
+    -1px 1px 0px black;
+}
+
+#photo-container {
+  width: 30%;
+  overflow-y: auto;
+  max-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto 0 auto;
+}
+
+#photo-container::-webkit-scrollbar {
+  display: none;
+}
+
+#photo-container img {
+  width: 100%;
+}
+
+.frame img {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+@media screen and (max-width: 1024px) {
+  h1,
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 2rem;
+  }
+
+  #photo-container {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1,
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1.8rem;
+  }
+
+  #photo-container {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1,
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  #photo-container {
+    width: 90%;
+  }
+}
