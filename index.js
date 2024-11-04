@@ -26,3 +26,4 @@ document.addEventListener("DOMContentLoaded", () => {
     // Load images when page loads
     loadImages();
   });
+  
