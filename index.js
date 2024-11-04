@@ -2,13 +2,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const photoContainer = document.getElementById("photo-container");
   
     function loadImages() {
-      fetch("/background") // Changed to fetch from background directory
+      fetch("/images") // Changed to fetch from background directory
         .then((response) => response.json())
         .then((images) => {
           photoContainer.innerHTML = "";
           images.forEach((src) => {
             const img = document.createElement("img");
-            img.src = `/background/${src}`; // Update image source path
+            img.src = `/images/${src}`; // Update image source path
             img.alt = "Image Frame";
             img.classList.add("photo");
             img.addEventListener("click", () => handleSelectedPhoto(img));
